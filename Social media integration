@@ -1,0 +1,177 @@
+"//Html//"
+<!DOCTYPE html>
+<head>
+<title>spark Foundation</title>
+<link type="text/css" rel="stylesheet" href="CSS/style.css"/>
+<script>
+function myMove()
+{
+let id=null;
+const elem=document.getElementById("animate");
+img src="https://cdn.mos.cms.futurecdn.net/eKCXUTEEjqFtpByKXU6zS3-970-80.jpg.webp"
+let pos=0;
+clearInterval(id);
+id=setInterval(frame,5);
+function frame()
+{
+if(pos==350)
+{
+clearinterval(id);
+}
+else
+{
+pos++;
+elem.style.top = pos+ "px";
+elem.style.left = pos+ "px";
+}
+}
+}
+</script>
+</head>
+<body>
+<h2>LetsGrowMore</h2>
+<div container="sample">
+<img src="https://media-exp1.licdn.com/dms/image/C4E0BAQGBCAR8WNr3-Q/company-logo_200_200/0/1633253494114?e=2159024400&v=beta&t=6PfGcgZetZedklOwICvOl67xFzp74WoRyCH_-hSsbNs">
+</div>
+<div class="login-box">
+<div class="left-box">
+<h1>Sign Up</h1>
+<input type="text" class="input-box" placeholder="UserName">
+<input type="email" class="input-box" placeholder="Email">
+<input type="password" class="input-box" placeholder="Enter password">
+<input type="password" class="input-box" placeholder="Re-Enter password">
+<input type="submit" class="submitbtn" value="Sign Up">
+</div>
+<div class="right-box">
+<span class="right-title">Sign up with <br>Social Network</span>
+<button class="social facebook">Log in with Facebook</button>
+<button class="social google">Log in with Google+</button>
+<div class="or">
+   OR
+</div>
+</div>
+</body>
+</html>
+"//Css//"
+.login-box{
+  margin:auto;
+  height:300px;
+  width:600px;
+  background:rgba(0,0,0,0.4);
+  box-shadow:0 2px 4px rgba(0,0,0,0.8);
+  position:relative;
+  }
+body{
+  background-color:Blue;
+  margin:0;
+  padding:0;
+  font-size:16px;
+  background-position:center;
+  background-size: cover;
+  }
+#cointainer img{
+  height:50px;
+  width:30%;
+  padding-bottom:60px;
+}
+.left-box{
+  position:absolute;
+  top:0;
+  left:0;
+  box-sizing:border-box;
+  width:300px;
+  height:400px;
+}
+h1{
+    margin-bottom:20px;
+    font-size:28px;
+    color:red;
+    font-weight:bold;
+}
+h2{
+    color:yellow;
+    background:black;
+    font-size:30px;
+    margin-left:700px;
+    }
+.input-box{
+            display:block;
+            box-sizing:border-box;
+            margin-bottom:20px;
+            padding:4px;
+            width:220px;
+            height:32px;
+            border:1px solid red;
+            outline: none;
+            font-size:15px;
+            transition:0.2s;
+            color:blue;
+            background:transparent;
+}
+.submit-btn{
+             margin-bottom: 28px;
+             width:120px;
+             height:32px;
+             background:red;
+             border:none;
+             border-radius:2px;
+             color:yellow;
+             text-transform:uppercase;
+             cursor:pointer;
+             transition:0.2s;
+}
+.submit-btn:hover,
+.submit-btn:focus
+{
+background:black;
+transition:0.2s;
+}
+.right-box{
+  position:absolute;
+  top:0;
+  right:0;
+  box-sizing:border-box;
+  width:300px;
+  height:300px;
+  background:none;
+  background-position:center;
+  background-size:cover;
+}
+.right-title{
+       display:block;
+       margin-bottom:40px;
+       font-size:28px;
+       color:white;
+       text-align:center;
+       text-shadow:0 2px 4px rgba(0,0,0,0.6);
+}
+.social{
+            margin-bottom:20px;
+            width:220px;
+            height:36px;
+            border-radius:2px;
+            border:none;
+            outline: none;
+            font-size:15px;
+            transition:0.2s;
+            color:white;
+}
+.facebook{
+           background:#32508e;
+
+}
+.google{
+          background:red;
+}
+.or{
+    position:absolute;
+    top:140px;
+    left:-50px;
+    width:40px;
+    height:40px;
+    background:white;
+    border-radius:50%;
+    line-height:40px;
+    text-align:center;
+    text-shadow:0 2px 4px rgba(0,0,0,0.6);
+}
